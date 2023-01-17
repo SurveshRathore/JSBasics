@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS program</title>
+    </head>
+    <body>
+        <h3>JS Function</h3>
+        <input type="button" onclick="funcMessage()" value="Call the function">
+
+        <script>
+            function funcMessage()
+            {
+                alert("You click the button")
+            }
+
+            var pow=new Function("num1","num2","return Math.pow(num1,num2)");  
+            document.writeln("<br>"+"Power of 2^3 is: " +pow(2,3)); 
+        </script>
+    </body>
+</html>

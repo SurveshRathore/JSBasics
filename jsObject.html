@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS program</title>
+    </head>
+    <body>
+        <h3>JS Object</h3>
+        <script>
+            var empObject = new Object();
+            empId = 100;
+            empname = "plmko";
+            empSalary = 1900;
+
+            document.write("<br> Employees details is: <br>")
+            document.write("Employees Id: "+empId+ "<br> Employees Name is: " + empname + "<br> Employees salary is: " + empSalary);
+
+        </script>
+        <h3>JS Object Using Function</h3>
+    <script>
+        function empObject(empId, empname, empSalary)
+        {
+            this.empId = empId;
+            this.empname = empname;
+            this.empSalary = empSalary;
+
+        }
+
+        emp = new empObject(1, "abc", 1000);
+        document.write("<br> Employees details is: <br>")
+        document.write("Employees Id: "+emp.empId+ "<br> Employees Name is: " + emp.empname + "<br> Employees salary is: " + emp.empSalary);
+    </script>
+</body>
+</html>

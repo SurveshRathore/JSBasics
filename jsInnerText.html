@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS program</title>
+    </head>
+    <body>
+        <h3>JS innertext</h3>
+        <form name = "myForm">
+            Enter Name: <input type="text" value="Enter Your Name" name = "userName" onkeyup="funcShow()">
+            Your Name is:<span id="userEnteredName"></span> 
+
+        </form>
+        <script>
+            function funcShow()
+            {
+                var name = document.myForm.userName.value;
+                document.getElementById("userEnteredName").innerText=name
+            }
+        </script>
+</body>
+</html>

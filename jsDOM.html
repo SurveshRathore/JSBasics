@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS program</title>
+    </head>
+    <body>
+        <h3>JS DOM get the Element By using Id</h3>
+        <script>
+        </script>
+        Square Root of 17 is: <span id="sqrRoot"></span>  <br>  
+        <script>    
+            document.getElementById('sqrRoot').innerHTML=Math.sqrt(17);    
+        </script> 
+        
+        3 to the power of 4 is: <span id ="p3"></span>
+        <script>    
+            document.getElementById('p3').innerHTML=Math.pow(3,4);    
+        </script>  
+
+        <br><span> count of the span tag using the getElementsByTagName is:</span>
+        <button onclick="countSpan()">count span tag</button>  
+   
+        <script> 
+            function countSpan()
+            {
+                var totalSpan = document.getElementsByTagName("span");
+                alert("Total span tag are: " + totalSpan.length);
+            }   
+            
+        </script> 
+        
+        
+</body>
+</html>
